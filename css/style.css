@@ -1,0 +1,36 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body{ 
+  background-color: #F2F2F2;
+}
+header{
+  position: fixed;
+  height: 70px;
+  width: 100%; 
+  background-color: #282828;
+}
+.Suche{
+  position: relative;
+  width: 200px;
+  height: 70%;
+  margin: 10px auto;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  border-left: 0px solid white;
+  border-right: 0px solid white;
+}
+input{
+  padding-left: 10px;
+  padding: center;
+  font-family: 'Lobster', cursive;
+  font-size: 30px;
+  color: white;
+  height: 98%;
+  width: 98%;
+  background-color: transparent;
+  outline: none;
+  border: 0px;
+}
