@@ -11,16 +11,15 @@
 </script>
 </head> 
 <body> 
-  <header>
     <div id="Header">
       <div id="Content-left">
-        <a href=""><div id="Upload"></div></a>
-        <a href=""><div id="Fragen"></div></a>
+        <div id="Upload"><a href="Upload.html"><img src="css/Upload.png" height="100%" width="100%"></a></div>
+        <div id="Fragen"><a href="Fragen.html"><img src="css/Frage.png" height="100%" width="100%"></a></div>
       </div>
       <div id="Suche"><input id="SucheText" type="text" placeholder="Suchen"></div>
       <div id="Content-right">
-        <a href=""><div id="Herzen"></div></a>
-        <a href=""><div id="Profil"></div></a>
+        <div id="Herzen"><a href="Herzen.html"><img src="css/Herz.png" height="100%" width="100%"></a></div>
+        <div id="Profil"><a href="Profil.html"><img src="css/Profil.png" height="100%" width="100%"></a></div>
       </div>
     </div>
       <div id="Menu">
@@ -29,23 +28,9 @@
         <a href="Musik.html"><div id="Musik">Musik</div></a>
         <a href="Orte.html"><div id="Orte">Orte</div></a>
       </div>
-      <div class="Information">
-        <div id="Snapchat">Snapchat</div>
-        
-      </div>
-  </header>
-  <script>
-  $(function(){
-    $("#Suche").click(function(){
-        $("#Suche").css("background-color", "#5F5F5F")
-    });
-   $("#Content-left").click(function(){
-        $("#Suche").css("background-color", "transparent")
-    });
-    $("#Content-right").click(function(){
-        $("#Suche").css("background-color", "transparent")
-    });
-});
-  </script>
+  <div class="Snapchat">
+    <p>SNAPCHAT</p>
+    <div id="Snapchatimg"></div>
+  </div>
 </body> 
 </html>

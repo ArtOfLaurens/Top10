@@ -18,6 +18,7 @@ body{
   width: 100%; 
   background-color: #444;
   box-shadow: 0 3px 0 rgba(0, 0, 0, .05);
+  z-index: 2;
 }
 #Content-left{
   position: absolute;
@@ -29,8 +30,6 @@ body{
 #Upload{
   opacity: 0.9;
   position: absolute;
-  background-image: url("Upload.png");
-  background-size: 100%;
   height: 35px;
   width: 35px;
   margin-left: 25%;
@@ -44,8 +43,6 @@ body{
 }
 #Fragen{
   opacity: 0.9;
-  background-image: url("Frage.png");
-  background-size: 100%;
   height: 35px;
   width: 35px;
   margin-left: 65%;
@@ -68,14 +65,17 @@ opacity: 0.5;
   border-left: 0px solid white;
   border-right: 0px solid white;
 }
+input:focus{
+background: #888;
+}
 input{
   padding-left: 10px;
   padding: center;
   font-family: 'Lobster', cursive;
   font-size: 30px;
   color: white;
-  height: 98%;
-  width: 98%;
+  height: 100%;
+  width: 96.5%;
   background-color: transparent;
   outline: none;
   border: 0px;
@@ -90,8 +90,6 @@ input{
 #Herzen{
   opacity: 0.9;
   position: absolute;
-  background-image: url("Herz.png");
-  background-size: 100%;
   height: 35px;
   width: 35px;
   margin-left: 25%;
@@ -105,8 +103,6 @@ opacity: 0.5;
 }
 #Profil{
   opacity: 0.;
-  background-image: url("Profil.png");
-  background-size: 100%;
   height: 35px;
   width: 35px;
   margin-left: 65%;
@@ -119,69 +115,94 @@ opacity: 0.5;
   opacity: 0.1;
 }
 .BorderOne{
+  text-decoration: none;
   text-align: center;
+  font-size: 30px;
+  color: #fff;
+  padding-top: 105px;
   font-family: 'Lobster', cursive;
   opacity: 0.6;
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 150px;
+  height: 45px;
   width: 150px;  
-  background-color: #3E8AF3;
+  background-color: #555;
   margin-top: -151px;
   margin-left: -176px;
   border-radius: 152px 0 0 0;
+  text-decoration: none;
 }
 .BorderOne:hover{
   opacity: 1;
+  box-shadow: 2px 2px 0 #888;
 }
+
+
 .BorderTwo{
   text-align: center;
+  font-size: 30px;
+  color: #fff;
+  padding-top: 105px;
+  font-family: 'Lobster', cursive;
   opacity: 0.6;
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 150px;
+  height: 45px;
   width: 150px;  
-  background-color: #FFDE47;
+  background-color: #bbb;
   margin-top: -151px;
   margin-left: -24px;
   border-radius: 0 152px 0 0;
 }
 .BorderTwo:hover{
   opacity: 1;
+  box-shadow: 2px 2px 0 #888;
 }
 .BorderThree{
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+  padding-top: 7px;
+  font-family: 'Lobster', cursive;
   text-align: center;
   opacity: 0.6;
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 150px;
+  height: 143px;
   width: 150px;  
-  background-color: #C3C3C3;
+  background-color: #bbb;
   margin-top: 1px;
   margin-left: -176px;
   border-radius: 0 0 0 152px;
 }
 .BorderThree:hover{
 opacity: 1;
+  box-shadow: 2px 2px 0 #888;
 }
 .BorderFour{
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+  padding-top: 7px;
+  font-family: 'Lobster', cursive;
   text-align: center;
   opacity: 0.6;
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 150px;
+  height: 143px;
   width: 150px;  
-  background-color: #20A462;
+  background-color: #555;
   margin-top: 1px;
   margin-left: -24px;
   border-radius: 0 0 152px 0;
 }
 .BorderFour:hover{
 opacity: 1;
+  box-shadow: 2px 2px 0 #888;
 }
 #Menu{
   position: absolute;
@@ -192,6 +213,7 @@ opacity: 1;
   background-color: white;
   border-radius: 0px 0px 10px 10px;
   box-shadow: 0 2px 0 rgba(0, 0, 0, .05);
+  z-index: 1;
 }
 #Apps{
   text-align: center;
@@ -215,7 +237,7 @@ opacity: 1;
   font-size: 25px;
   font-family: 'Poiret One', cursive;
   font-weight: 600;
-  color: #009419;
+  color: #000;
   border-radius: 0px 0px 0px 10px;
   position: absolute;
   width: 25%;
@@ -224,7 +246,7 @@ opacity: 1;
  }
 #AppsA:hover{
   background-color: #D8D8D8;
-  color: #fff;
+  color: #000;
  }
 #Media{
   text-align: center;
@@ -277,12 +299,12 @@ opacity: 1;
   background-color: #D8D8D8;
   color: #fff;
  }
-.Information{
+.Snapchat{
   position: absolute;
   margin: 130px;
   margin-left: 20%;
-  width: 30%;
-  height: 300px;
+  width: 60%;
+  height: 200px;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 2px 0 rgba(0, 0, 0, .05);
@@ -291,16 +313,22 @@ opacity: 1;
   border-left: 0px solid white;
   border-right: 0px solid white;
 }
+p{
+  margin-left: 210px;
+  margin-top: 15px;
+  position: absolute;
+  font-size: 25px;
+  font-family: 'Poiret One', cursive;
+  font-weight: 800;
+  color: #000;
+}
 /*ALLE BILDER VON INFO*/
-#Snapchat{
+#Snapchatimg{
   background: url("Snapchat.png");
   background-size: 100%;
   background-repeat: no-repeat;
-  height:120px;
-  width:100px;
-  margin-left: 10px;
-  margin-top: 10px;
-  text-align: center;
-  padding-top: 105px;
-  font-size: 18px;
+  height: 90%;
+  width: 170px;
+  margin-left: 15px;
+  margin-top: 15px;
 }

@@ -1,7 +1,9 @@
 <!DOCTYPE html> 
 <html> 
 <head> 
-  <title></title> 
+  <title>Top10</title> 
+  <meta name="Description" content="Sie wollen wissen was die Neuesten und Besten Apps, Medien, Orte und Musik sind dann Besuche die Website für weitere Infos"  />
+  <meta charset="utf-8" />
   <link rel="stylesheet" href="css/style.css"> 
   <script language="javascript" type="text/javascript" src="js/script.js"></script>
   <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -14,32 +16,19 @@
   <header>
     <div id="Header">
       <div id="Content-left">
-        <a href=""><div id="Upload"></div></a>
-        <a href=""><div id="Fragen"></div></a>
+        <div id="Upload"><a href="Upload.html"><img src="css/Upload.png" height="100%" width="100%"></a></div>
+        <div id="Fragen"><a href="Fragen.html"><img src="css/Frage.png" height="100%" width="100%"></a></div>
       </div>
       <div id="Suche"><input id="SucheText" type="text" placeholder="Suchen"></div>
       <div id="Content-right">
-        <a href=""><div id="Herzen"></div></a>
-        <a href=""><div id="Profil"></div></a>
+        <div id="Herzen"><a href="Herzen.html"><img src="css/Herz.png" height="100%" width="100%"></a></div>
+        <div id="Profil"><a href="Profil.html"><img src="css/Profil.png" height="100%" width="100%"></a></div>
       </div>
     </div>
   </header>
-  <a href="Apps.html"><div class="BorderOne">Apps</div></a>
-  <a href="Media.html"><div class="BorderTwo">Media</div></a>
-  <a href="Musik.html"><div class="BorderThree">Musik</div></a>
-  <a href="Orte.html"><div class="BorderFour">Orte</div></a>
-  <script>
-  $(function(){
-    $("#Suche").click(function(){
-        $("#Suche").css("background-color", "#5F5F5F")
-    });
-   $("#Content-left").click(function(){
-        $("#Suche").css("background-color", "transparent")
-    });
-    $("#Content-right").click(function(){
-        $("#Suche").css("background-color", "transparent")
-    });
-});
-  </script>
+  <a href="Apps.html"><div class="BorderOne">Top Apps</div></a>
+  <a href="Media.html"><div class="BorderTwo">Top Media</div></a>
+  <a href="Musik.html"><div class="BorderThree">Top Musik</div></a>
+  <a href="Orte.html"><div class="BorderFour">Top Orte</div></a>
 </body> 
 </html>
